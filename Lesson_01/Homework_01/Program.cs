@@ -10,23 +10,33 @@ namespace Homework_01
     {
         static void Main(string[] args)
         {
-            // Создание базы данных из 20 сотрудников
-            Repository repository = new Repository(20);
+            // Создание базы данных из 40 сотрудников
+            Repository repository = new Repository(40);
 
             // Печать в консоль всех сотрудников
             repository.Print("База данных до преобразования");
 
-            // Увольнение всех работников с именем "Агата"
-            repository.DeleteWorkerByName("Агата");
+            //Увольнять сотрудников с наибольшей зарплатой до тех пор, пока не останется меньше 30.
+            int salary = 60000;
+            while (repository.Workers.Count >= 30)
+                {
+                repository.DeleteWorkerBySalary(salary);
+                salary = salary - 100;
+                }
+
+            //// Увольнение всех работников с именем "Агата"
+
+            //repository.DeleteWorkerByName("Агата");
+
+            //// Печать в консоль сотрудников, которые не попали под увольнение
+            //repository.Print("База данных после первого преобразования");
+
+            //// Увольнение всех работников с именем "Аделина"
+            //repository.DeleteWorkerByName("Аделина");
 
             // Печать в консоль сотрудников, которые не попали под увольнение
-            repository.Print("База данных после первого преобразования");
+            repository.Print("База данных после увольнений");
 
-            // Увольнение всех работников с именем "Аделина"
-            repository.DeleteWorkerByName("Аделина");
-
-            // Печать в консоль сотрудников, которые не попали под увольнение
-            repository.Print("База данных после второго преобразования");
 
 
             #region Домашнее задание
