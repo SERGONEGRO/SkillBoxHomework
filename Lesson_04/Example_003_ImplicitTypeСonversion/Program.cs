@@ -35,8 +35,8 @@ namespace Example_002_ImplicitTypeСonversion
             long longValue = intValue;          // Неявное приведение int к long
             double doubleValue = longValue;     // Неявное приведение long к double
 
-            //char c = 'я';
-            //int d = c;
+            char c = 'я';
+            int d = c;
 
             Console.WriteLine(d);
         }

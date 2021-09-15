@@ -39,13 +39,14 @@ namespace Example_003_ExplicitTypeConversion
             //double d = 1.2;     //
             //byte byteValue = d; // Ошибка компилятора
 
-            double d = 1.2;             //
+            double d = 1434.2;             //
             byte byteValue = (byte)d;   // Ошибки компилятора не будет
 
 
             int h = (int)d;
 
             int q = (int)((byte)d);
+            Console.WriteLine($"h = {h}, q={ q}");
 
         }
     }
