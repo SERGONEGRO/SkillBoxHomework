@@ -1,0 +1,3 @@
+﻿1>------ Сборка запущено: проект: Theme3_Homework, конфигурация: Debug|AnyCPU ------
+1>C:\Program Files\dotnet\sdk\5.0.401\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(241,5): error NETSDK1004: файл ресурсов "D:\Source\Repos\SERGONEGRO\SkillBoxHomework\Theme3_Homework\obj\project.assets.json" не найден. Восстановите пакет NuGet, чтобы создать его.
+========== Сборка: 0 успешно, 1 неудачно, 0 актуально, 0 пропущено ==========
